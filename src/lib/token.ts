@@ -1,8 +1,8 @@
 import consola from "consola"
 import fs from "node:fs/promises"
 
-import { PATHS } from "~/lib/paths"
-import { getCopilotToken } from "~/services/copilot/get-token/copilot-token"
+import { PATHS } from "../lib/paths"
+import { getCopilotToken } from "../services/copilot/get-token/copilot-token"
 
 // Simple token manager with basic encapsulation
 export const tokenService = {

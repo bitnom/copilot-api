@@ -5,9 +5,9 @@ import {
   COPILOT_API_CONFIG,
   GITHUB_API_CONFIG,
   GITHUB_WEB_API_CONFIG,
-} from "~/lib/constants"
-import { modelsCache } from "~/lib/models"
-import { tokenService } from "~/lib/token"
+} from "../lib/constants"
+import { modelsCache } from "../lib/models"
+import { tokenService } from "../lib/token"
 
 export const copilot = ofetch.create({
   baseURL: COPILOT_API_CONFIG.baseURL,

@@ -2,12 +2,11 @@ import consola from "consola"
 import fs from "node:fs/promises"
 import { FetchError } from "ofetch"
 
-import { PATHS } from "~/lib/paths"
-import { tokenService } from "~/lib/token"
-import { getGitHubUser } from "~/services/github/get-user/service"
-
+import { PATHS } from "../lib/paths"
+import { tokenService } from "../lib/token"
 import { getModels } from "../services/copilot/get-models/service"
 import { getGitHubToken } from "../services/github/get-token/service"
+import { getGitHubUser } from "../services/github/get-user/service"
 
 // Extract to individual functions for each initialization step
 async function initializeAppDirectory(): Promise<void> {

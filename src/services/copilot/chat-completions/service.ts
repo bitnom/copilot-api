@@ -1,6 +1,6 @@
-import { copilot } from "~/services/api-instance"
+import type { ChatCompletionResponse, ChatCompletionsPayload } from "./types.ts"
 
-import type { ChatCompletionResponse, ChatCompletionsPayload } from "./types"
+import { copilot } from "../../../services/api-instance"
 
 export const chatCompletions = (payload: ChatCompletionsPayload) =>
   copilot<ChatCompletionResponse>("/chat/completions", {

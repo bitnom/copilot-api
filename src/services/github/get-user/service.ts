@@ -1,4 +1,4 @@
-import { github } from "~/services/api-instance"
+import { github } from "../../../services/api-instance"
 
 export async function getGitHubUser() {
   return github<GithubUser>("/user", {

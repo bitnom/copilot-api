@@ -1,9 +1,9 @@
 import { stream } from "fetch-event-stream"
 
-import { COPILOT_API_CONFIG } from "~/lib/constants"
-import { tokenService } from "~/lib/token"
-
 import type { ChatCompletionsPayload } from "./types"
+
+import { COPILOT_API_CONFIG } from "../../../lib/constants"
+import { tokenService } from "../../../lib/token"
 
 export const chatCompletionsStream = async (
   payload: ChatCompletionsPayload,

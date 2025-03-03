@@ -6,11 +6,11 @@ import { streamSSE, type SSEMessage } from "hono/streaming"
 import type { ChatCompletionsPayload } from "~/services/copilot/chat-completions/types"
 import type { ChatCompletionChunk } from "~/services/copilot/chat-completions/types-streaming"
 
-import { isNullish } from "~/lib/is-nullish"
-import { logger } from "~/lib/logger"
-import { modelsCache } from "~/lib/models"
-import { chatCompletions } from "~/services/copilot/chat-completions/service"
-import { chatCompletionsStream } from "~/services/copilot/chat-completions/service-streaming"
+import { isNullish } from "../../lib/is-nullish"
+import { logger } from "../../lib/logger"
+import { modelsCache } from "../../lib/models"
+import { chatCompletions } from "../../services/copilot/chat-completions/service"
+import { chatCompletionsStream } from "../../services/copilot/chat-completions/service-streaming"
 
 function createCondensedStreamingResponse(
   finalChunk: ChatCompletionChunk,
